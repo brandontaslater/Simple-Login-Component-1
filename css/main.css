@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: white;
+  background-repeat: no-repeat;
+  background: -webkit-linear-gradient(#e66465, #9198e5);
+  background: -moz-linear-gradient(#e66465, #9198e5);
+  background: -ms-linear-gradient(#e66465, #9198e5);
+  background: -o-linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+form input,
+form input:focus {
+  border-width: 0px;
+  outline: none;
+}
+
+/* Utilities */
+.image-cropper {
+  width: 199px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.avatar {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -40%;
+  height: 100%;
+  width: auto;
+  padding: 0px;
+}
+
+/* Login */
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#login .card-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.card h1 {
+  font-size: 4rem !important;
+  font-weight: 600;
+  margin: 25px 0px;
+  padding: 15px 0px;
+}
+
+.card form .input-container {
+  margin: 25px 0px;
+}
+
+.card form .input-container .input-line {
+  display: flex;
+  flex-direction: row;
+  background: rgb(187, 187, 187, 0.1);
+  padding: 15px 15px;
+  width: 100%;
+  height: 75px;
+  position: relative;
+}
+
+.card form .input-container .input-line .input {
+  width: 500px;
+}
+
+.card form .input-container .input-line .input input:focus {
+  margin-top: 10px;
+}
+
+.card form .input-container .input-line .input input:focus ~ .floating-label,
+.card
+  form
+  .input-container
+  .input-line
+  .input
+  input:not(:focus):valid
+  ~ .floating-label {
+  top: 0px;
+  bottom: 20px;
+  left: 10px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.card form .input-container .input-line .input .inputText {
+  font-size: 1.25rem;
+  width: 100%;
+  height: 35px;
+  background: rgb(187, 187, 187, 0);
+}
+
+.card form .input-container .input-line .input .floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 22px;
+  transition: 0.2s ease all;
+}
+
+.card form .input-container .input-line .input input {
+  background: rgb(187, 187, 187, 0);
+  font-size: 1.25rem;
+}
+
+.card form .input-container .input-line i {
+  color: red;
+  font-size: 1.25rem;
+  margin-top: 25;
+}
+
+.card form .input-container .mini-input-label {
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
